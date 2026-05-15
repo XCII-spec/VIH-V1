@@ -12,3 +12,86 @@ body{
   background-position:center;
   background-attachment:fixed;
 }
+body{
+  margin:0;
+  font-family:Arial;
+  color:white;
+  text-align:center;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+    url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b");
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+
+header{
+  padding:40px;
+  background:rgba(0,195,255,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.container{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+  padding:40px;
+}
+
+.card, .scan{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border:1px solid rgba(255,255,255,0.2);
+  padding:20px;
+  border-radius:15px;
+  width:300px;
+}
+
+.btn{
+  margin-top:10px;
+  padding:12px 18px;
+  border:none;
+  border-radius:10px;
+  background:#00c3ff;
+  color:white;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.btn:hover{
+  background:#0077ff;
+}
+
+.bar{
+  width:100%;
+  height:15px;
+  background:#222;
+  border-radius:10px;
+  overflow:hidden;
+  margin-top:10px;
+}
+
+.progress{
+  width:0%;
+  height:100%;
+  background:lime;
+  animation: scan 5s infinite;
+}
+
+@keyframes scan{
+  0%{width:0%}
+  50%{width:100%}
+  100%{width:0%}
+}
+
+footer{
+  margin-top:40px;
+  padding:20px;
+  background:#111;
+}
+body{
+  font-family: 'Orbitron', sans-serif;
+}
